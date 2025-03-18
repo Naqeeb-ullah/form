@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        thead{
+            background-color: darkred;
+            color: white;
+        }
+        tbody{
+            background-color: aqua;
+        }
+        tfoot{
+            background-color: black;
+            color: white;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM IN HTML</title>
+    <title>Document</title>
 </head>
 <body>
-   <!-- type of form      -->
-    <h2>SIGN UP</h2>
-    <form action="/action.php">
-        First Name: <input type="text">
-        <br>
-        <br>
-        Last Name: <input type="text">
-        <br>
-        <br>
-        Full Name: <input type="text">
-        <br>
-        <br>
-        <!-- email @ -->
-        Email: <input type="email">
-        <br>
-        <br>
-        Password: <input type="password">
-        <input type="submit">
-        <button>SUBMIT</button>
+    <table border="1px" cellspacing="10px" cellpadding="10px">
+        <caption>Students Fee Record</caption>
+      <thead>
+        <tr>
+            <th>ROLL NO</th>
+            <th>NAME</th>
+            <th>CLASS</th>
+            <th>FEES</th>
+          </tr>
+      </thead>
+     <tbody>
+        <tr>
+            <td>1001</td>
+            <td>NaseebKhan</td>
+            <td rowspan="2">WebDev</td>
+            <td rowspan="2">3200</td>
+          </tr>
+          <tr>
+            <td>1003</td>
+            <td>ALI</td>
+          </tr>
+          <tr>
+            <td>1002</td>
+            <td>Ahmed</td>
+            <td>DIT</td>
+            <td>1600</td>
+          </tr>
+     </tbody>
+      <tfoot>
+        <tr>
+            <th colspan="3">Total</th>
+            <th>8000/=</th>
+          </tr>
+      </tfoot>
+    </table>
+    
 
-    </form>
 </body>
 </html>
